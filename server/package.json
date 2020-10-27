@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsnd -r tsconfig-paths/register --files src/server.ts --ignore-watch node_modules --respawn --transpile-only",
+    "typeorm": "ts-node node_modules/typeorm/cli.js",
+    "build": "babel src --extensions \".js,.ts\" --copy-files --no-copy-ignored --out-dir dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.8",
+    "@types/multer": "^1.4.4",
+    "@types/yup": "^0.29.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "multer": "^1.4.2",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.0",
+    "typeorm": "^0.2.28",
+    "yup": "^0.29.3"
+  }
+}

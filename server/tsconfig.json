@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "paths": {
+      "@models/*": ["./src/app/models/*"],
+      "@controllers/*": ["./src/app/controllers/*"],
+      "@views/*": ["./src/views/*"]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
